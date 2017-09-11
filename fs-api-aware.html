@@ -1,10 +1,6 @@
 <link rel="import" href="../polymer/polymer-element.html">
 
 <script>
-  if (!window.FamilySearch) {
-    window.FamilySearch = {};
-  }
-  
   /**
    * `fs-api-aware`
    * 
@@ -13,7 +9,7 @@
    * @polymer
    * @mixinFunction
    */
-  FamilySearch.ApiAwareMixin = Polymer.dedupingMixin((superClass) => class extends superClass {
+  const FSApiAwareMixin = Polymer.dedupingMixin((superClass) => class extends superClass {
     static get properties() {
       return {
         /**

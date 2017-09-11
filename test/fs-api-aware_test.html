@@ -14,7 +14,7 @@
   <body>
     
     <script>
-      class MixinApplied extends FamilySearch.ApiAwareMixin(Polymer.Element) {
+      class MixinApplied extends FSApiAwareMixin(Polymer.Element) {
         static get is() { return 'mixin-applied'; }
       }
       customElements.define(MixinApplied.is, MixinApplied);
